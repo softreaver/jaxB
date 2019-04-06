@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bibliotheque xmlns="http://www.test.fr/jaxB/perso">
+    <livre>
+        <titre>Titre1</titre>
+        <auteur>
+            <nom>NOM 1</nom>
+            <prenom>Prénom 1</prenom>
+        </auteur>
+        <editeur>Editeur1</editeur>
+    </livre>
+    <livre>
+        <titre>Titre2</titre>
+        <auteur>
+            <nom>NOM 2</nom>
+            <prenom>Prénom 2</prenom>
+        </auteur>
+        <editeur>Editeur2</editeur>
+    </livre>
+    <livre>
+        <titre>Titre3</titre>
+        <auteur>
+            <nom>NOM 3</nom>
+            <prenom>Prénom 3</prenom>
+        </auteur>
+        <editeur>Editeur3</editeur>
+    </livre>
+</bibliotheque>

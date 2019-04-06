@@ -1,0 +1,44 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.test.fr/jaxB/perso"
+xmlns:tns="http://www.test.fr/jaxB"
+xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+jaxb:extensionBindingPrefixes="xjc"
+xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"  jaxb:version="1.0"
+elementFormDefault="qualified">
+	<xs:element  name="bibliotheque">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element  maxOccurs="unbounded" name="livre">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element  name="titre" type="xs:string" />
+							<xs:element  name="auteur">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element  name="nom"
+										type="xs:string" />
+										<xs:element  name="prenom"
+										type="xs:string" />
+										<xs:element  name="autre"
+										type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element  name="editeur" type="xs:string">
+								<!--
+								Personnalisation de la  propriété editeur en nomEditeur
+								-->
+								<xs:annotation>
+									<xs:appinfo>
+										<jaxb:property  name="nomEditeur" />
+									</xs:appinfo>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
